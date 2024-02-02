@@ -1,5 +1,9 @@
 {
-	"image": "neondatabase/build-tools:pinned",
+	// "image": "neondatabase/build-tools:pinned",
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "context": "."
+    },	
 	// "privileged": true,
 	// "runArgs": ["--network", "host"],
 	// "capAdd": ["NET_RAW", "NET_ADMIN"],
@@ -14,7 +18,7 @@
 		// "http_proxy": "http://host.docker.internal",
 		// "https_proxy": "http://host.docker.internal:80"
 	},
-	"remoteUser": "root",
+	// "remoteUser": "root",
 	"waitFor": "onCreateCommand",
 	"updateContentCommand": "",
 	"postCreateCommand": "",
